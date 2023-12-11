@@ -1,0 +1,151 @@
+/* .projects {
+    margin-bottom: 5rem;
+    scroll-margin-top: 15rem;
+    transition: .3s ease-out;
+  }
+  
+  .projects .projects__content {
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+  }
+  
+  .projects ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .projects ul li.projects__reversed-list {
+    flex-direction: row-reverse;
+  }
+  
+  .projects ul li:not(:last-of-type) {
+    margin-bottom: 12rem;
+  }
+  
+  .projects ul li .image img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+  }
+  
+  .projects ul li .projects__info {
+    max-width: 47rem;
+  }
+  
+  .projects ul li .projects__info p {
+    margin: 1rem 0 4rem;
+  }
+  
+  .projects ul li .projects__info a {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .projects ul li,
+    .projects ul li.projects__reversed-list {
+      flex-direction: column;
+    }
+  
+    .projects ul li .projects__info {
+      max-width: 66rem;
+    }
+  
+    .projects ul li .image img {
+      min-width: auto;
+    }
+  } */
+
+  .projects{
+    transition: .3s ease-out;
+  }
+
+.slideshow-container{
+  position: relative;
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+.fade {
+  display: inline-block;
+  width: auto;
+}
+
+.fade > img, .legenda{
+  width: 100%;
+  padding: 0 10%;
+  height: 40rem;
+  margin: auto;
+}
+
+.legenda{
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  height: 40rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legenda:hover{
+  z-index: 20;
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+.legenda > label > h3{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.legenda > label:not(h3){
+  text-align: justify;
+}
+
+/* Estilos para os botões de navegação */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--dark-secondary-color);
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.6s ease-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: var(--tertiary-color);
+}
+
+/* Animação de fade */
+@keyframes fade {
+  from {
+    right: 0;
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}

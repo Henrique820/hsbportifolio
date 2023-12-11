@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>HSB Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/extends.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="social_links">
+      <div id="logo_image" onclick="social()">
+        <img src="assets/logo.png" alt="Henrique" />
+      </div>
+      <div id="social_master">
+        <div class="socials" id="wpp">
+          <a href="https://api.whatsapp.com/send?phone=5511940604111&text=Olá%20Henrique,%20vamos%20conversar%20sobre%20uma%20oportunidade%20profissional"> <img src="assets/whats.png" alt="whatsapp" /></a>
+        </div>
+        <div class="socials" id="lkd">
+          <a href="https://linkedin.com/in/henrique-souza-bonine/"><img src="assets/linkedin.png" alt="Linkedin" /></a>
+        </div>  
+        <div class="socials" id="git">
+          <a href="https://github.com/Henrique820"><img src="assets/github.png" alt="github" /></a>
+        </div>
+      </div>
+    </section>
+    <div class="space" id="body"></div>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__content max-width mb-0">
+        <ul class="navbar__links">
+          <li><a href="#body" onclick="opacity('skills')">Habilidades</a></li>
+          <li><a href="#body" onclick="opacity('projects')">Projetos</a></li>
+          <li><a href="#body" onclick="opacity('header')">Início</a></li>
+          <li><a href="#body" onclick="opacity('about')">Sobre</a></li>
+          <li><a href="#body" onclick="opacity('contact')">Contato</a></li>
+        </ul>
+        <div class="navbar__mobile">
+          <img src="assets/menu.svg" alt="menu" class="burguer" />
+          <ul class="mobile__links">
+            <li><a href="#body" onclick="opacity('skills')">Habilidades</a></li>
+            <li><a href="#body" onclick="opacity('projects')">Projetos</a></li>
+            <li><a href="#body" onclick="opacity('header')">Início</a></li>
+            <li><a href="#body" onclick="opacity('about')">Sobre</a></li>
+            <li><a href="#body" onclick="opacity('contact')">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header"> <!-- class="max-width" -->
+      <div class="header__left">
+        <h1>Olá! Sou Henrique </h1>
+        <h2>Ciêntista de Dados|| Gestor de TI</h2>
+        <p>
+          Cientista de dados com expertise em Python, Java e JavaScript,
+          além de conhecimentos sólidos em Power BI e bancos de dados. 
+          Minha formação educacional proporcionou uma base robusta para 
+          lidar com os desafios na análise e manipulação de dados. 
+          Estou pronto para traduzir dados em insights poderosos e 
+          enfrentar projetos desafiadores.
+        </p>
+        <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+      </div>
+      <div class="header__right">
+        <div class="header__image">
+          <img src="assets/hsb.png" alt="Henrique" class="henrique" />
+          <img src="assets/abstract.svg" alt="background" class="background" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="about" class="about op"> <!-- class="about max-width" -->
+      <div class="about__left">
+        <h2 class="secondary-title">Saiba Mais</h2>
+        <p>
+          "Convido você a se conectar comigo nas redes sociais abaixo e explorar 
+          mais sobre o meu trabalho. Descubra como transformar dados em insights 
+          poderosos!"
+        </p>
+        
+      </div>
+      <div class="about__right">
+        <h3 class="tertiary-title mb-m">
+           Transformando Dados em Decisões
+        </h3>
+        <p>
+          Bem-vindo ao meu portfólio! Sou um cientista de dados em 
+          início de carreira apaixonado por transformar dados em 
+          insights poderosos. Minha experiência sólida em 
+          bancos de dados, lógica de programação e programação 
+          orientada a objetos me permite mergulhar nos dados, 
+          explorar padrões e criar soluções impactantes. 
+        
+        </p>
+        <p>
+          Além disso, minha habilidade no Power BI me permite visualizar 
+          informações de forma envolvente e intuitiva. Estou pronto para 
+          enfrentar desafios e colaborar em projetos inovadores. 
+          Vamos explorar juntos o potencial dos dados!
+        </p>
+      </div>
+    </section>
+
+    <!-- habilidades -->
+    <section id="skills" class="skills op">
+      <div class="skills__content max-width">
+        <h2 class="tertiary-title">Meu conjunto de habilidades e recursos para enfrentar desafios.</h2>
+        <p class="description">
+          Explore as habilidades e ferramentas que desenvolvi, capacitando-me 
+          a criar soluções criativas e funcionais para desafios acadêmicos.
+        </p>
+        <ul>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/powerbi.png" alt="Power Bi" />
+            </div>
+            <h3>Power Bi</h3>
+            <p>
+              Experiência na criação de dashboards intuitivos com foco em tecnologias modernas.
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/java.svg" alt="programação orientada a objetos" />
+            </div>
+            <h3>Programação orientada a objetos</h3>
+            <p>
+              "Experiência sólida em programação orientada a objetos, 
+              construindo soluções robustas e escaláveis."
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/banco dedados.png" alt="Banco de Dados" />
+            </div>
+            <h3>Banco de Dados</h3>
+            <p>
+              Conhecimentos em Banco de Dados e experiência como estudante em SQL
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/grafico-de-pizza.png" alt="Matemática Estatística" />
+            </div>
+            <h3>Matemática Estatística</h3>
+            <p>
+              Habilidade em explorar matemática e estatística 
+              para compreender e analisar dados
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="op">
+      <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="./assets/ecommerce.png" alt="Imagem 1">
+            <div class="legenda"><label>
+              <h3 class="tertiary-title"> Modelagem (MER) e SQL</h3>
+              Durante a disciplina de Banco de Dados, mergulhei na essência
+              da modelagem através do Modelo Entidade-Relacionamento (MER).
+              Aprendi a estruturar e visualizar entidades, atributos e relacionamentos,
+              criando bases sólidas para representar dados de forma eficiente.
+              Além disso, aprofundei-me no SQL, dominando a linguagem para gerenciar,
+              consultar e manipular informações em bancos de dados. Essas habilidades
+              são fundamentais para a gestão e organização eficaz dos dados,
+              tornando-se fundamentais na área de tecnologia da informação.
+            </label></div>
+        </div>
+        <div class="slide fade">
+          <img src="./assets/me.png" alt="Imagem 3">
+          <div class="legenda"><label>
+            <h3 class="tertiary-title">Da Probabilidade ao Cálculo Integral</h3>
+            Meu caminho acadêmico abrange um vasto panorama matemático.
+            Iniciei minha jornada mergulhando nas nuances da probabilidade
+            e estatística, compreendendo medidas de posição e eventos exclusivos.
+            Avancei para o pré-cálculo, explorando desde funções exponenciais até
+            sistemas lineares, entendendo a interconexão matemática fundamental.
+          </label></div>
+        </div>
+        <div class="slide fade">
+          <img src="./assets/task-manager.png" alt="Imagem 2">
+          <div class="legenda"><label>
+            <h3 class="tertiary-title">Desenvolvimento de Dashboard Inovador</h3>
+            O projeto de Desenvolvimento de Dashboard Inovador para
+              Gestão de Dados no Salão de Cabeleireiro foi enriquecedor.
+              Aprendi sobre a valorização da inovação nos processos,
+              a importância do feedback dos clientes e o impacto das parcerias
+              estratégicas. Enfrentamos desafios com o tempo limitado,
+              a complexidade na integração de dados e a manutenção da
+              privacidade e segurança. Essas experiências ressaltam a complexidade
+              e a gratificação de empreender projetos inovadores na gestão de dados
+              de um salão de cabeleireiro
+          </label></div>
+        </div>
+
+        <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+        <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <section id="contact" class="op">
+      <form action="#" method="post" id="mail">
+        <label for="mail"><h2 class="tertiary-title mb-s">Vamos conversar?</h2></label>
+        <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+        <input type="text" name="email" id="email" placeholder="Email..."><br>
+        <textarea name="mensagem" id="memnsagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer__content max-width mb-0">
+        <ul class="mb-l">
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5511940604111&text=Olá%20Henrique,%20vamos%20conversar%20sobre%20uma%20oportunidade%20profissional"><img src="assets/whats.png" alt="whatsapp" /></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/henrique-souza-bonine/"><img src="assets/linkedin.png" alt="Linkedin" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Henrique820"><img src="assets/github.png" alt="github" /></a>
+          </li>
+          <li>
+            <a href="mailto:4311743@alunouninter.com"><img src="assets/email.png" alt="email" /></a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          © 2023 Henrique Souza Bonine. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="./script/index.js"></script>
+  </body>
+</html>
